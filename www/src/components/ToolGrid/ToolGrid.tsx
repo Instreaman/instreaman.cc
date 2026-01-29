@@ -6,7 +6,7 @@ function ToolGrid() {
     <section className="space-y-4">
       <div className="flex items-center justify-between">
         <h2 className="text-sm font-semibold uppercase tracking-[0.3em] text-slate-500">
-          工具导航
+          [补给枢纽|Tools]
         </h2>
         <span className="text-xs text-slate-400">常用入口</span>
       </div>

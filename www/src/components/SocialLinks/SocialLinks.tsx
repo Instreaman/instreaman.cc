@@ -24,7 +24,7 @@ function SocialLinks() {
     <section className="space-y-4">
       <div className="flex items-center justify-between">
         <h2 className="text-sm font-semibold uppercase tracking-[0.3em] text-slate-500">
-          社交链接
+          [次元映射|Platforms]
         </h2>
         <span className="text-xs text-slate-400">GitHub / Blog / Mail</span>
       </div>

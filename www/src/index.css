@@ -26,3 +26,62 @@ a {
 a:hover {
   color: #1e40af;
 }
+
+/* 高级感动态背景：多层渐变 + 漂浮光晕 */
+.bg-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.animated-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(59, 130, 246, 0.18), transparent 45%),
+    radial-gradient(circle at 85% 15%, rgba(14, 165, 233, 0.16), transparent 50%),
+    radial-gradient(circle at 50% 90%, rgba(99, 102, 241, 0.12), transparent 55%);
+}
+
+.orb {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 9999px;
+  filter: blur(70px);
+  opacity: 0.35;
+  animation: float 14s ease-in-out infinite;
+}
+
+.orb-1 {
+  top: -140px;
+  left: -120px;
+  background: rgba(59, 130, 246, 0.45);
+}
+
+.orb-2 {
+  bottom: -180px;
+  right: -120px;
+  background: rgba(14, 165, 233, 0.35);
+  animation-delay: -4s;
+}
+
+.orb-3 {
+  top: 30%;
+  right: 5%;
+  width: 320px;
+  height: 320px;
+  background: rgba(99, 102, 241, 0.25);
+  animation-delay: -8s;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(18px, -12px, 0) scale(1.05);
+  }
+}
